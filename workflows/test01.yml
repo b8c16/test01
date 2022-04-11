@@ -3,7 +3,7 @@ on:
     url: https://rss.evangelizo.org/rss/v2/evangelizo_rss-de.xml
     config:
       format: |
-        item.contentSnippet = item.title.substring(item.title.search(' : ') + 1)
+        item.contentSnippet = item.title.substring(item.title.search(' : ') + 4)
         return item;
 jobs:
   print:
